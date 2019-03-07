@@ -53,8 +53,6 @@ for (x,y,w,h) in faces:
     if x+w>xmax:
         xmax=x+w
         
-        
-    
     roi_gray = gray[y:y+h, x:x+w]
     roi_color = img[y:y+h, x:x+w]
     eyes = eye_cascade.detectMultiScale(roi_gray)
